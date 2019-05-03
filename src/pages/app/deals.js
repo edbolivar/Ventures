@@ -37,12 +37,12 @@ class Deals extends React.Component {
     const userUUID = this.store.UserStore.uuid || this.state.userUUID;
 
     return (
-      <Layout UserStore={this.store.UserStore} UIStore={this.store.UIStore}>
-        <DealsContainer
-          userUUID={userUUID}
-          userRole={this.store.UserStore.userRole}
-        />
-      </Layout>
+      // <Layout UserStore={this.store.UserStore} UIStore={this.store.UIStore}>
+      //   <DealsContainer
+      //     userUUID={userUUID}
+      //     userRole={this.store.UserStore.userRole}
+      //   />
+      // </Layout>
     );
   }
 }

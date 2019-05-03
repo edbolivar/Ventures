@@ -37,9 +37,9 @@ class Dashboard extends React.Component {
     const userUUID = this.store.UserStore.uuid || this.state.userUUID;
 
     return (
-      <Layout UserStore={this.store.UserStore} UIStore={this.store.UIStore}>
-        <DashboardContainer userUUID={userUUID} />
-      </Layout>
+      // <Layout UserStore={this.store.UserStore} UIStore={this.store.UIStore}>
+      //   <DashboardContainer userUUID={userUUID} />
+      // </Layout>
     );
   }
 }
