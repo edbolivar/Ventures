@@ -92,28 +92,28 @@ class Profile extends React.Component {
               );
             // TODO: change the error message to a generic
             // 'error connecting to server' message
-            if (error) {
-              console.log(error);
-              return (
-                <div style={{ textAlign: 'center' }}>
-                  We're sorry. There was an error processing your request.
-                </div>
-              );
-            }
+            // if (error) {
+            //   console.log(error);
+            //   return (
+            //     <div style={{ textAlign: 'center' }}>
+            //       We're sorry. There was an error processing your request.
+            //     </div>
+            //   );
+            // }
 
-            if (this.state.agentDeleted)
-              return (
-                <div style={{ textAlign: 'center', fontSize: '1.2rem' }}>
-                  AGENT DELETED
-                </div>
-              );
+            // if (this.state.agentDeleted)
+            //   return (
+            //     <div style={{ textAlign: 'center', fontSize: '1.2rem' }}>
+            //       AGENT DELETED
+            //     </div>
+            //   );
 
-            if (!data || !data.agent)
-              return (
-                <div style={{ textAlign: 'center', fontSize: '1.2rem' }}>
-                  AGENT NOT NOTFOUND
-                </div>
-              );
+            // if (!data || !data.agent)
+            //   return (
+            //     <div style={{ textAlign: 'center', fontSize: '1.2rem' }}>
+            //       AGENT NOT NOTFOUND
+            //     </div>
+            //   );
 
             return (
               <ProfileContainer
