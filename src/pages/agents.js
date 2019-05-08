@@ -31,27 +31,27 @@ class Listing extends React.Component {
     };
   }
 
-  // createAgents = num => {
-  //   const agents = [];
-  //   for (let i = 0; i < num; i++) {
-  //     const agent = {
-  //       profilePhotoURL: `http://picsum.photos/325/325/?random?${chance.integer(
-  //         {
-  //           min: 1,
-  //           max: 1000,
-  //         }
-  //       )}`,
-  //       name: chance.name(),
-  //       email: chance.email(),
-  //       mobileNumber: chance.phone(),
-  //       agentID: chance.integer({ min: 100000, max: 999999 }),
-  //     };
+  createAgents = num => {
+    const agents = [];
+    for (let i = 0; i < num; i++) {
+      const agent = {
+        profilePhotoURL: `http://picsum.photos/325/325/?random?${chance.integer(
+          {
+            min: 1,
+            max: 1000,
+          }
+        )}`,
+        name: chance.name(),
+        email: chance.email(),
+        mobileNumber: chance.phone(),
+        agentID: chance.integer({ min: 100000, max: 999999 }),
+      };
 
-  //     agents.push(agent);
-  //   }
+      agents.push(agent);
+    }
 
-  //   return agents;
-  // };
+    return agents;
+  };
 
   render() {
     return (
