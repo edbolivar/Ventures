@@ -18,19 +18,19 @@ class AdminViewAgents extends React.Component {
   }
 
   constructor(props) {
-    // super(props);
-    // this.store = initStore(props.isServer, props.cookieJWTData);
+    super(props);
+    this.store = initStore(props.isServer, props.cookieJWTData);
 
-    // if (isBrowser && !this.store.UserStore.isLoggedIn) {
-    //   Router.pushRoute('home');
-    // }
+    if (isBrowser && !this.store.UserStore.isLoggedIn) {
+      Router.pushRoute('home');
+    }
 
-    // // for debugging only!!!
-    // if (isBrowser && !window._appStore) window._appStore = this.store;
+    // for debugging only!!!
+    if (isBrowser && !window._appStore) window._appStore = this.store;
 
-    // this.state = {
-    //   userUUID: this.store.UserStore.uuid,
-    // };
+    this.state = {
+      userUUID: this.store.UserStore.uuid,
+    };
   }
 
   render() {
