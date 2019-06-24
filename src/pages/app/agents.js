@@ -30,7 +30,7 @@ class AgentsDashboard extends React.Component {
     return (
       <Layout UserStore={this.store.UserStore} UIStore={this.store.UIStore}>
         <div>
-          {/* <AgentsTableContainer /> */}
+          <AgentsTableContainer />
         </div>
       </Layout>
     );
